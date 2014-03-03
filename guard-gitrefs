@@ -1,8 +1,8 @@
 [deny.delete]
-        refs/heads/master
-        refs/heads/develop
-        refs/heads/release
+        ^refs/heads/master$
+        ^refs/heads/develop$
+        ^refs/heads/release/.*
 [deny.push-force]
-        refs/heads/master
-        refs/heads/develop
-        refs/heads/release
+        ^refs/heads/master$
+        ^refs/heads/develop$
+        ^refs/heads/release/.*

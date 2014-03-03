@@ -57,7 +57,7 @@ function read_config(filename) {
 #
 function denied(section, ref) {
     for ( i in deny ) {
-        if ( index(i, section) && deny[i] == ref ) return 1
+        if ( index(i, section) && ref ~ deny[i] ) return 1
     }
 }
 
